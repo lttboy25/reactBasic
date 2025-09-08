@@ -4,7 +4,12 @@ import ChildComponent from "./ChildComponent";
 class MyComponents extends React.Component {
     state = {
         firstName: '',
-        lastName: ''
+        lastName: '', 
+        arrStudent: [
+            {_id: '01', nameStudent: "John Son", score: 10},
+            {_id: '02', nameStudent: "Peter", score: 8},
+            {_id: '03', nameStudent: "Marry", score: 4},
+        ]
     }
 
     /*
@@ -78,6 +83,7 @@ class MyComponents extends React.Component {
                  <ChildComponent
                     name = {'tung'}
                     age = {'25'}
+                    arrStudent = {this.state.arrStudent}
                  />
             </>
 
